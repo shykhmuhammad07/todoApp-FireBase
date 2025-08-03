@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FireTask - Dark Theme Todo App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page">
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-icon floating">
+          <i class="fas fa-check"></i>
+        </div>
+        <span>FireTask</span>
+      </div>
+      <button id="logout" class="btn btn-danger">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="todo-header">
+      <div>
+        <h1 class="card-title">Your Tasks</h1>
+        <p class="card-subtitle">Manage your daily tasks efficiently</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="todo-input-group">
+        <input type="text" id="todo" class="todo-input form-control" placeholder="Enter a task...">
+        <button id="btn" class="btn btn-primary">
+          <i class="fas fa-plus"></i> Add Task
+        </button>
+      </div>
+      
+      <ul id="list" class="todo-list">
+        <!-- Tasks will be populated by JavaScript -->
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="copyright">© 2023 FireTask - Firebase Todo App. All rights reserved.</div>
+      <div>Designed with <i class="fas fa-heart" style="color: var(--secondary);"></i> for productivity</div>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
